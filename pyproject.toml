@@ -1,0 +1,23 @@
+[project]
+name = "nba-over-under"
+version = "0.1.0"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "nba-api>=1.11.4",
+    "numpy>=2.5.4",
+    "pandas>=3.0.6",
+    "requests>=2.34.2",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "tabulate>=0.10.0",
+    "torch>=2.14.1",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
